@@ -56,12 +56,9 @@ test = 0
 fi = "input.txt" if not test else "ex1.txt"
 fip = join(dir_path, fi)
 
-padding = 0
-pad = ['\n'] if padding else []
-
 ans = 0
 with open(fip) as f:
-    for idx, line in enumerate(f.readlines() + pad):
+    for idx, line in enumerate(f.readlines()):
         xs = line.strip()
         print(xs)
         q = deque(xs[:14])

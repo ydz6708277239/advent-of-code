@@ -11,7 +11,7 @@ print(current_yr)
 
 dir_path = path[0]  ## get cwd
 print(dir_path)
-template_path = '/Users/wdanni/kyopro/AOC/solve_template.py'
+template_path = os.path.join(dir_path, 'solve_template.py')
 
 
 years = argv[1:]
